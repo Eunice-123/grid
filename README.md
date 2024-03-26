@@ -23,13 +23,13 @@ save a dataframe object of result from grid of results say "b"
   -create postgis extension in db
   - in postgres create a table with the required headers from grid
 
-  # Local connection parameters
- -DB_NAME = "***"
--DB_HOST = "***"
--DB_PORT = "***"
--DB_USERNAME = "***"
--DB_PASSWORD = "***"
--using con <- dbConnect(odbc::odbc(),"***")
--st_write(obj = b, dsn = con, Id(schema="posgres db schema", table = "postgres table"), append = TRUE)
+# Local connection parameters
+- DB_NAME = "***"
+- DB_HOST = "***"
+- DB_PORT = "***"
+- DB_USERNAME = "***"
+- DB_PASSWORD = "***"
+- using con <- dbConnect(odbc::odbc(),"***")
+- st_write(obj = b, dsn = con, Id(schema="posgres db schema", table = "postgres table"), append = TRUE)
 - loop a list of selected grids in the function
-- -apply list on function 
+- apply list on function 
